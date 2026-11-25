@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الأمانة العامة لمحافظة الرقة - محافظة الرقة</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 64'%3E%3Crect width='96' height='21.4' fill='%23007a3d'/%3E%3Crect y='21.4' width='96' height='21.3' fill='%23fff'/%3E%3Crect y='42.7' width='96' height='21.3'/%3E%3Cg fill='%23ce1126'%3E%3Cpath d='M0-7L1.65-2.27 6.66-2.16 2.66.87 4.11 5.66 0 2.8-4.11 5.66-2.66.87-6.66-2.16-1.65-2.27Z' transform='translate(28 32)'/%3E%3Cpath d='M0-7L1.65-2.27 6.66-2.16 2.66.87 4.11 5.66 0 2.8-4.11 5.66-2.66.87-6.66-2.16-1.65-2.27Z' transform='translate(48 32)'/%3E%3Cpath d='M0-7L1.65-2.27 6.66-2.16 2.66.87 4.11 5.66 0 2.8-4.11 5.66-2.66.87-6.66-2.16-1.65-2.27Z' transform='translate(68 32)'/%3E%3C/g%3E%3C/svg%3E">
+<meta name="theme-color" content="#0f5c4d">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="أمانة الرقة">
+
+<style>
+:root{--bg:#f4f1ea;--card:#fff;--tx:#1d2a26;--mut:#68736f;--pri:#0f5c4d;--on:#fff;--bd:#ddd8cc;--red:#b3261e;--gold:#b88a2b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121a18;--card:#1b2623;--tx:#e8eeec;--mut:#9aa8a3;--pri:#3fae96;--on:#07211b;--bd:#2c3b37;--red:#f2877f;--gold:#e0b559}}
+:root[data-theme="dark"]{--bg:#121a18;--card:#1b2623;--tx:#e8eeec;--mut:#9aa8a3;--pri:#3fae96;--on:#07211b;--bd:#2c3b37;--red:#f2877f;--gold:#e0b559}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Cairo",Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.7}
+*{font-family:"Cairo",Tahoma,"Segoe UI",Arial,sans-serif}
+header{background:linear-gradient(135deg,#06261f,#0f5c4d);border-bottom:2px solid #d4a72c;color:#f2cf66;text-shadow:0 0 6px rgba(242,207,102,.55),0 0 14px rgba(242,207,102,.3);padding:18px 16px 14px;position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+header h1{margin:0;font-size:20px}header p{margin:0;font-size:13px;opacity:.85}
+.wrap{max-width:760px;margin:0 auto;padding:12px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+input,select,textarea{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:9px 12px;width:100%}
+.chips{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:20px;padding:5px 14px;font:inherit;font-size:14px;white-space:nowrap;cursor:pointer}
+.chip.on{background:var(--pri);color:var(--on);border-color:var(--pri)}
+.doc{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px;margin:10px 0;cursor:pointer;position:relative}
+.doc.unread{border-right:5px solid var(--gold)}
+.doc h3{margin:4px 0;font-size:16px}.meta{font-size:13px;color:var(--mut)}
+.tag{display:inline-block;font-size:12px;padding:1px 10px;border-radius:12px;background:var(--pri);color:var(--on)}
+.urg{background:var(--red);color:#fff;margin-inline-start:6px}
+.btn{background:var(--pri);color:var(--on);border:0;border-radius:10px;padding:9px 16px;font:inherit;cursor:pointer}
+.btn.alt{background:transparent;color:var(--pri);border:1px solid var(--pri)}
+#rd{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:20;overflow-y:auto;padding:max(12px,env(safe-area-inset-top,0px)) 10px max(12px,env(safe-area-inset-bottom,0px))}
+.paper{max-width:700px;margin:0 auto;background:var(--card);border-radius:12px;padding:22px}
+.lh{color:var(--gold);text-align:center;border-bottom:2px solid var(--pri);padding-bottom:10px;margin-bottom:14px;font-weight:700}
+.lh small{display:block;font-weight:700;color:inherit}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .lh{text-shadow:0 0 8px rgba(224,181,89,.55),0 0 18px rgba(224,181,89,.3)}}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.sig{margin-top:24px;text-align:left;font-weight:700}
+.empty{text-align:center;color:var(--mut);padding:30px}
+#adm{display:none;background:var(--card);border:1px dashed var(--pri);border-radius:14px;padding:14px;margin:10px 0}
+#adm>*{margin:5px 0}
+.hd{display:flex;align-items:center;gap:12px}.lg{width:58px;height:58px;flex:none}.lh .lg{width:76px;height:76px;display:block;margin:0 auto 6px}.hd small,.hd h1,.hd p{display:block;font-size:15px;font-weight:700;opacity:1;margin:0;line-height:1.7}.at{max-width:100%;border-radius:8px;margin:12px 0;border:1px solid var(--bd)}
+@media print{body *{visibility:hidden}#rd,#rd *{visibility:visible}#rd{position:absolute;background:none}.acts{display:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><path id="wg" d="M47 40C38 31 20 28 4 34L11 40L3 46L14 50L8 58L20 60L16 68L30 66L34 72L44 62Z"/></defs><symbol id="eagle" viewBox="0 0 100 100"><g fill="#d4a72c" stroke="#8a6a12" stroke-width="1.2" stroke-linejoin="round"><use href="#wg"/><use href="#wg" transform="matrix(-1 0 0 1 100 0)"/><circle cx="50" cy="24" r="7"/><path d="M44 22L36 27L45 29Z"/><path d="M43 78L50 95L57 78Z"/></g><path d="M37 40H63V62Q63 75 50 82Q37 75 37 62Z" fill="#0f5c4d" stroke="#d4a72c" stroke-width="2"/><g fill="#d4a72c" font-size="9" text-anchor="middle"><text x="50" y="54">★</text><text x="43.5" y="65">★</text><text x="56.5" y="65">★</text></g></symbol></svg>
+<header>
+  <div class="hd">
+    <svg class="lg" role="img" aria-label="شعار الجمهورية العربية السورية"><use href="#eagle"/></svg>
+    <div>
+      <small>الجمهورية العربية السورية — محافظة الرقة</small>
+      <h1>الأمانة العامة لمحافظة الرقة - محافظة الرقة</h1>
+      <p>التعاميم والأوامر الإدارية والقرارات الرسمية للعاملين</p>
+    </div>
+  </div>
+</header>
+<div class="wrap">
+  <div class="bar"><input id="q" placeholder="🔍 ابحث بالعنوان أو رقم الكتاب أو الجهة..."></div>
+  <div class="chips" id="chips"></div>
+  <div class="bar" style="justify-content:space-between;align-items:center">
+    <span class="meta" id="cnt"></span>
+    <button class="btn alt" id="tg">وضع الإصدار (للجهات المخوّلة)</button>
+  </div>
+  <div id="adm">
+    <b>إصدار كتاب رسمي جديد</b>
+    <select id="n_t"><option>تعميم</option><option>أمر إداري</option><option>قرار</option></select>
+    <input id="n_h" placeholder="الموضوع">
+    <input id="n_i" placeholder="الجهة المصدرة (مثال: رئاسة مجلس الوزراء)">
+    <textarea id="n_b" rows="5" placeholder="نص الكتاب الرسمي"></textarea>
+    <label class="meta">🖼️ صورة مرفقة (اختياري) — صورة الكتاب الممسوح أو أي مرفق مصوّر</label>
+    <input type="file" id="n_f" accept="image/*">
+    <img id="n_p" class="at" style="display:none;max-width:180px" alt="معاينة الصورة">
+    <label><input type="checkbox" id="n_u" style="width:auto"> عاجل</label>
+    <button class="btn" id="pub">نشر لجميع العاملين</button>
+  </div>
+  <div id="list"></div>
+</div>
+<div id="rd"><div class="paper" id="paper"></div></div>
+<script>
+var T=["الكل","تعميم","أمر إداري","قرار"];
+var D=[
+{id:1,t:"تعميم",no:"ر/1245",h:"الالتزام بمواعيد الدوام الرسمي",i:"رئاسة مجلس الوزراء",d:"2026-11-20",u:true,b:["يُعمَّم على جميع الجهات العامة في المحافظة الالتزام بمواعيد الدوام الرسمي من الساعة الثامنة صباحاً حتى الثالثة بعد الظهر.","على مديري الجهات متابعة سجلات الحضور والانصراف وتزويد المحافظة بتقرير شهري."]},
+{id:2,t:"قرار",no:"ق/87",h:"تشكيل لجنة إعادة تأهيل المرافق الخدمية",i:"محافظة الرقة",d:"2026-11-18",u:false,b:["تُشكَّل لجنة برئاسة أمين سر المحافظة لمتابعة إعادة تأهيل المرافق الخدمية في المدينة والريف.","ترفع اللجنة تقريرها الأول خلال ثلاثين يوماً من تاريخ صدور هذا القرار."]},
+{id:3,t:"أمر إداري",no:"أ/312",h:"منح إجازة بمناسبة العطلة الرسمية",i:"وزارة التنمية الإدارية",d:"2026-11-15",u:false,b:["تُمنح جميع الجهات العامة عطلة رسمية يوم الخميس القادم.","تستثنى الجهات الخدمية والطوارئ التي تُنظَّم مناوباتها بقرار من مديريها."]},
+{id:4,t:"تعميم",no:"ر/1198",h:"تحديث بيانات العاملين في السجل الإلكتروني",i:"وزارة التنمية الإدارية",d:"2026-11-10",u:true,b:["يُطلب من جميع العاملين مراجعة شعبة الموارد البشرية لتحديث بياناتهم الشخصية والوظيفية.","تنتهي مهلة التحديث بتاريخ 2026-12-10."]}
+];
+var read={},ty="الكل";
+try{read=JSON.parse(localStorage.getItem("rq_read")||"{}")}catch(e){}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function $(i){return document.getElementById(i)}
+function chips(){$("chips").innerHTML=T.map(function(x){return '<button class="chip'+(x==ty?' on':'')+'" data-t="'+x+'">'+x+'</button>'}).join("")}
+function render(){
+  var q=$("q").value.trim();
+  var L=D.filter(function(x){return(ty=="الكل"||x.t==ty)&&(x.h+x.no+x.i).indexOf(q)>-1}).sort(function(a,b){return b.d<a.d?-1:1});
+  var un=D.filter(function(x){return!read[x.id]}).length;
+  $("cnt").textContent=un+" غير مقروء من أصل "+D.length;
+  $("list").innerHTML=L.length?L.map(function(x){return '<div class="doc'+(read[x.id]?'':' unread')+'" data-id="'+x.id+'"><span class="tag">'+esc(x.t)+'</span>'+(x.u?'<span class="tag urg">عاجل</span>':'')+'<h3>'+esc(x.h)+'</h3><div class="meta">رقم '+esc(x.no)+' • '+esc(x.i)+' • '+x.d+'</div></div>'}).join(""):'<div class="empty">لا توجد نتائج</div>';
+}
+function open_(id){
+  var x=D.filter(function(a){return a.id==id})[0];if(!x)return;
+  read[id]=1;try{localStorage.setItem("rq_read",JSON.stringify(read))}catch(e){}
+  $("paper").innerHTML='<div class="lh"><svg class="lg"><use href="#eagle"/></svg>الجمهورية العربية السورية<small>محافظة الرقة</small></div><div class="meta">'+esc(x.t)+' رقم: '+esc(x.no)+' &nbsp;|&nbsp; التاريخ: '+x.d+'<br>الجهة المصدرة: '+esc(x.i)+'</div><h2 style="font-size:18px">الموضوع: '+esc(x.h)+'</h2>'+x.b.map(function(p){return '<p>'+esc(p)+'</p>'}).join("")+(x.m?'<img class="at" src="'+x.m+'" alt="صورة مرفقة">':'')+'<div class="sig">وتفضلوا بقبول الاحترام<br>'+esc(x.i)+'</div><div class="acts"><button class="btn" id="dl">⬇️ تنزيل الكتاب</button>'+(x.m?'<button class="btn alt" id="di">🖼️ تنزيل الصورة</button>':'')+'<button class="btn alt" id="pr">🖨️ طباعة / PDF</button><button class="btn alt" id="cl">إغلاق</button></div>';
+  $("rd").style.display="block";
+  $("dl").onclick=function(){
+    var tx="محافظة الرقة\n"+x.t+" رقم: "+x.no+"\nالتاريخ: "+x.d+"\nالجهة: "+x.i+"\nالموضوع: "+x.h+"\n\n"+x.b.join("\n\n")+"\n";
+    try{var a=document.createElement("a");a.href=URL.createObjectURL(new Blob(["\ufeff"+tx],{type:"text/plain;charset=utf-8"}));a.download=x.no.replace("/","-")+".txt";document.body.appendChild(a);a.click();a.remove()}catch(e){}
+  };
+  $("pr").onclick=function(){window.print()};
+  if(x.m)$("di").onclick=function(){try{var a=document.createElement("a");a.href=x.m;a.download="image-"+x.id;document.body.appendChild(a);a.click();a.remove()}catch(e){}};
+  $("cl").onclick=function(){$("rd").style.display="none";render()};
+  render();
+}
+$("chips").onclick=function(e){if(e.target.dataset.t){ty=e.target.dataset.t;chips();render()}};
+$("list").onclick=function(e){var c=e.target.closest(".doc");if(c)open_(c.dataset.id)};
+$("q").oninput=render;
+$("tg").onclick=function(){var a=$("adm");a.style.display=a.style.display=="block"?"none":"block"};
+$("pub").onclick=function(){
+  var h=$("n_h").value.trim(),b=$("n_b").value.trim();if(!h||!b)return;
+  var n=D.length+1;
+  D.push({id:n,t:$("n_t").value,no:"ج/"+(1000+n),h:h,i:$("n_i").value.trim()||"محافظة الرقة",d:new Date().toISOString().slice(0,10),u:$("n_u").checked,m:img,b:b.split(/\n+/)});img="";$("n_f").value="";$("n_p").style.display="none";
+  $("n_h").value=$("n_b").value="";$("adm").style.display="none";render();
+};
+var img="";
+$("n_f").onchange=function(){var f=this.files[0];if(!f)return;if(f.size>3e6){alert("حجم الصورة كبير (الحد الأقصى 3 ميغابايت)");this.value="";return}var r=new FileReader();r.onload=function(){img=r.result;var p=$("n_p");p.src=img;p.style.display="block"};r.readAsDataURL(f)};
+chips();render();
+if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){})})}
+</script>
+</body>
+</html>
